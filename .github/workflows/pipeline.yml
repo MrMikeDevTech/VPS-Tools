@@ -26,7 +26,7 @@ jobs:
       - name: Install binary
         run: |
           chmod +x vps
-          sudo mv vps /usr/local/bin/vps
+          mv vps /usr/local/bin/vps
 
       - name: Verify install
         run: |
