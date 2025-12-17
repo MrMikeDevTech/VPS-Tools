@@ -165,7 +165,8 @@ var welcomeCmd = &cobra.Command{
 		printFrame(width)
 
 		fmt.Printf("\n👋 Bienvenido, %s\n", username)
-		fmt.Printf("📅 Fecha y hora: %s\n", now)
+		fmt.Printf("📅 Fecha: %s\n", now[:10])
+		fmt.Printf("⏰ Hora: %s\n", now[11:])
 	},
 }
 
