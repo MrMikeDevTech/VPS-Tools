@@ -1,0 +1,8 @@
+# Ignore build artifacts
+vps
+*.exe
+*.out
+
+# cache
+.idea/
+.vscode/
