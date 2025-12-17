@@ -25,6 +25,7 @@ jobs:
 
       - name: Install binary
         run: |
+          whoami
           chmod +x vps
           sudo mv vps /usr/local/bin/vps
 
