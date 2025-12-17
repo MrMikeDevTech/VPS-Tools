@@ -21,7 +21,7 @@ jobs:
       - name: Build VPS CLI
         run: |
           go mod tidy
-          GOOS=linux GOARCH=amd64 go build -o vps
+          GOOS=linux GOARCH=amd64 go build -buildvcs=false -o vps
 
       - name: Install binary
         run: |
