@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var version = "0.1.0"
+var version = "0.1.1"
 
 var rootCmd = &cobra.Command{
 	Use: "vps",
@@ -22,5 +22,6 @@ func Execute() {
 }
 
 func init() {
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
 	rootCmd.SetVersionTemplate("La versión de VPS Tools es {{.Version}}\n")
 }
